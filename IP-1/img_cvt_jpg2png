@@ -1,0 +1,12 @@
+import cv2
+img=cv2.imread('lena.jpg')
+cv2.imshow('Orignal',img)
+cv2.waitKey(0)
+
+print(img.shape)
+print('Height of image: ',int(img.shape[0]),'pixls')
+print('Width of image: ',int(img.shape[1]),'pixels')
+cv2.imwrite('lenna.png',img)
+cv2.imshow('Img.png',img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
